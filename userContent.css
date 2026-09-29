@@ -1,0 +1,32 @@
+@-moz-document domain("chatgpt.com") {
+
+    html.dark,
+    html.dark body,
+    html.dark :not(:where(.light,.light *)) {
+
+        --bg-primary: #303030 !important;
+        --main-surface-primary: #212121 !important;
+        --bg-secondary-surface: #212121 !important;
+        --bg-elevated-secondary: #161616 !important;
+        --sidebar-surface-primary: #161616 !important;
+
+    }
+    /* Fonte dos blocos de código */
+    html.dark #code-block-viewer .cm-content,
+    html.dark #code-block-viewer .cm-line,
+    html.dark #code-block-viewer code {
+
+        font-family:
+            "JetBrains Mono",
+            "Cosolas",
+            "Fira Code",
+            Consolas,
+            monospace !important;
+
+        font-size: 12px !important;
+        font-weight: 400 !important;
+        line-height: 1.55 !important;
+        letter-spacing: 0 !important;
+        font-variant-ligatures: normal !important;
+    }
+}
